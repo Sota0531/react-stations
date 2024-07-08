@@ -8,8 +8,10 @@ import { useState } from 'react';
  */
 export const App = () => {
   const [dogUrl, setdogUrl] = useState('https://images.dog.ceo/breeds/entlebucher/n02108000_2064.jpg');
-  function changeImg(){
-    setdogUrl('https://images.dog.ceo/breeds/poodle-toy/n02113624_3159.jpg');
+  async function changeImg(){
+    let document =  await fetch("https://dog.ceo/api/breeds/image/random");
+    let infos = await document.json();
+    setdogUrl(infos.message);
   }
   return (
     <div>
