@@ -21,7 +21,7 @@ export const App = () => {
       <body>
         <h2 id = "siteDescription">犬の画像が見れます</h2>    
         
-        <img src = {dogUrl}></img>
+        <img id = "dogImg" src = {dogUrl}></img>
         <button onClick={changeImg}>変更</button>
       </body>
       
