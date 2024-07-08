@@ -11,8 +11,11 @@ export const App = () => {
       <header>
         <h1 id = "title"> dog app</h1>
       </header>
-      {//<h2>Hello, world!</h2>
-      }   
+      <body>
+        <h2 id = "siteDescription">犬の画像が見れます</h2>
+        <img src = 'https://images.dog.ceo/breeds/entlebucher/n02108000_2064.jpg'></img>
+      </body>
+      
     </div>
   )
 }
