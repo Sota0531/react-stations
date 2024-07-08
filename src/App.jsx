@@ -8,7 +8,9 @@ import { useState } from 'react';
  */
 export const App = () => {
   const [dogUrl, setdogUrl] = useState('https://images.dog.ceo/breeds/entlebucher/n02108000_2064.jpg');
-  
+  function changeImg(){
+    setdogUrl('https://images.dog.ceo/breeds/poodle-toy/n02113624_3159.jpg');
+  }
   return (
     <div>
       <header>
@@ -18,7 +20,7 @@ export const App = () => {
         <h2 id = "siteDescription">犬の画像が見れます</h2>    
         
         <img src = {dogUrl}></img>
-        
+        <button onClick={changeImg}>変更</button>
       </body>
       
     </div>
