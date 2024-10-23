@@ -2,6 +2,10 @@
 
 import './App.css'
 import { useState } from 'react';
+import Header from './Header';
+import { Declaration } from 'postcss';
+import Description from './Description';
+import DogImage from './DogImage';
 
 /**
  * @type {() => JSX.Element}
@@ -15,16 +19,8 @@ export const App = () => {
   }
   return (
     <div>
-      <header>
-        <h1 id = "title"> dog app</h1>
-      </header>
-      <body>
-        <h2 id = "siteDescription">犬の画像が見れます</h2>    
-        
-        <img id = "dogImg" src = {dogUrl}></img>
-        <button onClick={changeImg}>変更</button>
-      </body>
-      
+      <Header/>
+      <Description/>
     </div>
   )
 }
