@@ -1,11 +1,12 @@
 // DO NOT DELETE
 
 import './App.css'
-import { useState } from 'react';
+import { useState} from 'react';
 import Header from './Header';
 import { Declaration } from 'postcss';
 import Description from './Description';
 import DogImage from './DogImage';
+import DogListContainer from './DogListContainer';
 
 /**
  * @type {() => JSX.Element}
@@ -21,6 +22,7 @@ export const App = () => {
     <div>
       <Header/>
       <Description/>
+      <DogListContainer/>
     </div>
   )
 }
